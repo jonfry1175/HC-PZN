@@ -4,6 +4,6 @@
     color: red;
 } */
 
-div p {
+div > p {
     color: blue;
 }
