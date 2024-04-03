@@ -3,23 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Basic</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Box Model</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
-
-        a[target="_blank"] {
-            color: blue;
+        body {
+            padding: 0px;
+            margin: 0px;
         }
+
+        div {
+            padding: 0px;
+            margin: 0px;
+            background-color: lightseagreen;
+        }
+
+        p {
+            margin: 0px;
+            padding: 0px;
+            text-align: justify;
+        }
+
+        .artikel1 {
+            height: 200px;
+            background-color: maroon;
+            width: 200px;
+            padding: 10px;
+        }
+
+        .artikel2 {
+            height: 150px;
+            width: 300px;
+            padding: 20px;
+        }
+
+
     </style>
-    <style>
-        
-        </style>
 </head>
 <body>
-    <div>
-       <h1 style="font-family: Oswald, sans-serif; text-transform: lowercase;">text lowercase Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet tenetur reprehenderit sapiente quae voluptates ipsam. Similique consequatur, vero molestiae commodi facere omnis cum aliquid voluptates ullam, animi repudiandae quisquam rem?</h1>
+    <div class="artikel1">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur non, praesentium voluptatum minima molestias provident ab impedit earum consequuntur.</p>
+    </div>
+    <div class="artikel2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus eveniet expedita nemo omnis? Nisi perferendis sequi officiis molestias expedita!</p>
     </div>
 </body>
-
 </html>
