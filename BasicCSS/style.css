@@ -7,3 +7,7 @@
 .p1 {
     color: blue;
 }
+
+#judul, .p1 {
+    color: rgb(15, 236, 22);
+}
