@@ -4,10 +4,6 @@
     color: red;
 } */
 
-.p1 {
+div p {
     color: blue;
-}
-
-#judul, .p1 {
-    color: rgb(15, 236, 22);
 }
