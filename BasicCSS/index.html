@@ -1,49 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Box Model</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
     <style>
-        body {
-            padding: 0px;
-            margin: 0px;
-        }
+      table {
+        border-collapse: collapse;
+        width: auto;
+        height: auto;
+      }
 
-        div {
-            padding: 0px;
-            margin: 0px;
-            background-color: lightseagreen;
-        }
-
-        p {
-            margin: 0px;
-            padding: 0px;
-            text-align: justify;
-        }
-
-        .artikel1 {
-            height: 200px;
-            background-color: maroon;
-            width: 200px;
-            padding: 10px;
-        }
-
-        .artikel2 {
-            height: 150px;
-            width: 300px;
-            padding: 20px;
-        }
-
-
+      td {
+        text-align: center;
+      }
     </style>
-</head>
-<body>
-    <div class="artikel1">
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam consequatur non, praesentium voluptatum minima molestias provident ab impedit earum consequuntur.</p>
-    </div>
-    <div class="artikel2">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum temporibus eveniet expedita nemo omnis? Nisi perferendis sequi officiis molestias expedita!</p>
-    </div>
-</body>
+  </head>
+  <body>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>No</th>
+          <th>Name</th>
+          <th>Age</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Lorem ipsum dolor sit amet.</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>joe</td>
+          <td>10</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
