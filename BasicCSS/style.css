@@ -4,6 +4,6 @@
     color: red;
 } */
 
-div > p {
-    color: blue;
+body {
+    background-color: lightblue;
 }
