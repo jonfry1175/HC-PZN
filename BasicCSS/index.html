@@ -3,40 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Table</title>
+    <title>Form</title>
     <style>
-      table {
-        border-collapse: collapse;
-        width: auto;
-        height: auto;
-      }
 
-      td {
-        text-align: center;
-      }
+        #login {
+            background-color: #fff;
+            
+        }
+
+        #login:hover {
+            background-color: black;
+            color:white
+        }
+        input {
+            margin: 2px;
+        }
+
+     #username, #password {
+        border-style: solid;
+        border-color: aqua;
+     }
+
+     #username:focus, #password:focus {
+         background-color: black;
+         color:white
+     }
     </style>
   </head>
   <body>
-    <table border="1">
-      <thead>
-        <tr>
-          <th>No</th>
-          <th>Name</th>
-          <th>Age</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1</td>
-          <td>Lorem ipsum dolor sit amet.</td>
-          <td>20</td>
-        </tr>
-        <tr>
-          <td>2</td>
-          <td>joe</td>
-          <td>10</td>
-        </tr>
-      </tbody>
-    </table>
+   <form action="">
+   <div>
+     <label for="username">Username</label> <br>
+     <input required type="text" name="username" id="username">
+   </div>
+   <div>
+     <label for="password">Password</label> <br>
+     <input required type="password" name="password" id="password"> <br>
+   </div>
+   <button type="submit" id="login">Login</button>
   </body>
 </html>
