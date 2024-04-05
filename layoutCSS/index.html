@@ -3,14 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>flexbox</title>
+    <title>flexbox order</title>
 
     <style>
-        .container {
-            display: flex;
-        }
+      .container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
 
       .content {
+        width: 200px;
         background-color: blue;
         border: 2px solid black;
         margin: 10px;
@@ -23,19 +26,16 @@
   </head>
   <body>
     <div class="container">
-      <div class="content">
+      <div class="content" style="order: 2;">
         <h1>ini konten 1</h1>
         <p>Lorem ipsum dolor sit amet consecteturfi adipisicing elit.</p>
       </div>
-      <div class="content">
+      <div class="content" style="order: 3;">
         <h1>ini konten 2</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div> 
-      <div class="content">
+      </div>
+      <div class="content" style="order: 1;">
         <h1>ini konten 3</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-      </div> <div class="content">
-        <h1>ini konten 4</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
       </div>
     </div>
