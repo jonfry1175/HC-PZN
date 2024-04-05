@@ -1,37 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flex-grow</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex-shrink</title>
     <style>
-        .container {
-            display: flex;
-        }
+      .container {
+        display: flex;
+      }
 
-        .content {
-            background-color: #42b983;
-            border: 2px solid black;
-            padding: 5px;
-            margin: 5px;
-        }
+      .content {
+        background-color: salmon;
+        border: 2px solid black;
+        padding: 10px;
+        margin: 10px;
+      }
 
-        .small {
-            flex-grow: 1;
-        }
+      .content1 {
+        flex-shrink: 1;
+      }
 
-        .large {
-            flex-grow: 2;
-        }
+      .content2 {
+        flex-shrink: 2;
+      }
+
+      .content3 {
+        flex-shrink: 1;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="content small">A</div>
-        <div class="content large">B</div>
-        <div class="content small">C</div>
-        <div class="content large">D</div>
-        <div class="content small">E</div>
+      <div class="content content1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non
+        deleniti nesciunt excepturi nihil consequuntur adipisci voluptate iure
+        quae esse maiores sunt, quos vitae reiciendis exercitationem voluptas
+        culpa sequi iusto?
+      </div>
+      <div class="content content2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non
+        deleniti nesciunt excepturi nihil consequuntur adipisci voluptate iure
+        quae esse maiores sunt, quos vitae reiciendis exercitationem voluptas
+        culpa sequi iusto?
+      </div>
+      <div class="content content3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique non
+        deleniti nesciunt excepturi nihil consequuntur adipisci voluptate iure
+        quae esse maiores sunt, quos vitae reiciendis exercitationem voluptas
+        culpa sequi iusto?
+      </div>
     </div>
-</body>
+  </body>
 </html>
