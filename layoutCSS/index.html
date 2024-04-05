@@ -3,27 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Display</title>
+    <title>flexbox</title>
 
     <style>
+        .container {
+            display: flex;
+        }
+
       .content {
-          background-color: blue;
-          display: inline-block;
-          width: 200px;
-          height: auto;
+        background-color: blue;
+        border: 2px solid black;
+        margin: 10px;
+        padding: 10px;
+        /* display: inline-block;
+        width: 200px;
+        height: auto; */
       }
     </style>
   </head>
   <body>
-    <div class="content">
-      <h1>ini konten 1</h1>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    </div>
-
-    <div class="content">
-      <h2>ini konten 2</h2>
-
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="container">
+      <div class="content">
+        <h1>ini konten 1</h1>
+        <p>Lorem ipsum dolor sit amet consecteturfi adipisicing elit.</p>
+      </div>
+      <div class="content">
+        <h1>ini konten 2</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div> 
+      <div class="content">
+        <h1>ini konten 3</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div> <div class="content">
+        <h1>ini konten 4</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
     </div>
   </body>
 </html>
