@@ -3,17 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid line</title>
+    <title>Grid template area</title>
     <style>
       .container {
         display: grid;
         text-align: justify;
         background-color: lightblue;
-        grid-template-columns: [cline1] 100px [cline2] auto [cline3] 100px [cline4] 100px ;
-        grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4] 1000px;
-        /* border: 2px solid black;
-        margin: 10px;
-        padding: 10px; */
+        grid-template-columns: 100px auto 100px;
+        grid-template-rows: 50px auto 100px;
+        grid-template-areas:
+          "header header header"
+          ". content ."
+          "footer footer footer";
+      }
+
+      .header {
+        text-align: center;
+        background-color: red;
+        grid-area: header;
       }
 
       .content {
@@ -21,45 +28,44 @@
         border: 2px solid black;
         margin: 10px;
         padding: 10px;
-        grid-column-start: cline1;
-        grid-column-end: cline4;
-        grid-row-start: rline2;
-        grid-row-end: rline3;
-      }
-      .header {
-        text-align: center;
-        background-color: lightblue;
-        grid-column-start: cline1;
-        grid-column-end: cline4;
-        grid-row-start: rline1;
-        grid-row-end: rline2;
+        grid-area: content;
       }
 
       .footer {
         text-align: center;
         background-color: red;
-        grid-column-start: cline1;
-        grid-column-end: cline4;
-        grid-row-start: rline3;
-        grid-row-end: rline4;
+        grid-area: footer;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="header">
-        Selamat Datang di Website PZN
-      </div>
+      <div class="header">Selamat Datang di Website PZN</div>
       <div class="content">
         <h1>PZN Website</h1>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum officia, commodi iusto saepe consectetur laborum deleniti recusandae temporibus voluptatibus blanditiis corrupti, magnam rerum alias hic exercitationem impedit quae? Blanditiis, reiciendis.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, earum quas? Consequatur deserunt qui sapiente. Perferendis sunt praesentium architecto! Aspernatur asperiores sint culpa et at? Quisquam rem illo impedit obcaecati!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque explicabo laborum nemo, pariatur nulla deserunt iusto sint illo, aut, ratione modi. Architecto, similique odio quidem excepturi quisquam laborum quod ipsum!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt sunt odio tenetur magni ipsam quaerat molestias eligendi dolor, illum quod, laboriosam debitis suscipit nam aliquid a? Ullam provident omnis at?</p>
+        <p>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, eligendi dignissimos, soluta asperiores est temporibus perspiciatis nulla autem dolorum a quibusdam sequi ut repudiandae sint praesentium minima deleniti fuga architecto, quos tempore quaerat assumenda? Deserunt animi sit nemo iusto nostrum quo hic doloremque mollitia eaque aspernatur odit accusamus consequatur, ullam officia, aliquid quis provident amet tempore quam ratione reprehenderit minus! Placeat quidem nemo ipsum dignissimos suscipit inventore, maiores, quo quod modi amet excepturi esse voluptates qui quisquam officiis cumque soluta odit totam similique commodi! Veniam distinctio asperiores voluptates fugiat, recusandae molestias deserunt delectus sit beatae, doloribus facere repellat dolore quod.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, earum
+          quas? Consequatur deserunt qui sapiente. Perferendis sunt praesentium
+          architecto! Aspernatur asperiores sint culpa et at? Quisquam rem illo
+          impedit obcaecati!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
+          explicabo laborum nemo, pariatur nulla deserunt iusto sint illo, aut,
+          ratione modi. Architecto, similique odio quidem excepturi quisquam
+          laborum quod ipsum!
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt
+          sunt odio tenetur magni ipsam quaerat molestias eligendi dolor, illum
+          quod, laboriosam debitis suscipit nam aliquid a? Ullam provident omnis
+          at?
+        </p>
       </div>
-      <div class="footer">
-        Developed by PZN
-      </div>
+      <div class="footer">Developed by PZN</div>
     </div>
   </body>
 </html>
