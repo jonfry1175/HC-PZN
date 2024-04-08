@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Float</title>
-    <style>
-      .container {
-        background-color: aquamarine;
-      }
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>positioning relative</title>
+  <style>
+    .content {
+      background-color: aqua;
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+    }
 
-      .image {
-        height: 200px;
-        width: 200px;
-        background-color: tomato;
-        float: left;
-        margin-right: 10px;
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Judul artikel</h1>
-      <div class="image">A</div>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquam
-        architecto officiis illum impedit! Delectus vel eius amet voluptatum,
-        dolor dolores dolore sint maiores mollitia, placeat, consectetur
-        sapiente autem impedit.
-      </p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vero provident voluptates explicabo accusantium quaerat laboriosam. Est saepe commodi alias, nostrum soluta vel accusantium dolorem eaque asperiores fugiat aliquid dolore?</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cum harum accusantium voluptates voluptatibus quia dolorem reprehenderit culpa amet ipsa nobis rem sequi, iure quibusdam aliquid. Error nostrum perspiciatis quam.</p>
-    </div>
-  </body>
+    .content2 {
+      background-color: blueviolet;
+      position: relative;
+      top: 50px;
+      left: 50px;
+    }
+  </style>
+</head>
+<body>
+  <div class="content content1">
+    <h1>Content 1</h1>
+  </div>
+  <div class="content content2">
+    <h1>Content 2</h1>
+  </div>
+  <div class="content content3">
+    <h1>Content 3</h1>
+  </div>
+</body>
 </html>
