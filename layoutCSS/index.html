@@ -3,38 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grid gap</title>
+    <title>Float</title>
     <style>
       .container {
-        background-color: chartreuse;
-        display: grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 100px 100px 100px;
-        justify-content: center;
-        row-gap: 10px;
-        column-gap: 10px;
-        padding: 10px;
+        background-color: aquamarine;
       }
 
-      .content {
-        background-color: lightslategray;
-        border: 1px solid black;
-        padding: 10px;
+      .image {
+        height: 200px;
+        width: 200px;
+        background-color: tomato;
+        float: left;
+        margin-right: 10px;
         text-align: center;
       }
     </style>
   </head>
   <body>
     <div class="container">
-      <div class="content">1</div>
-      <div class="content">2</div>
-      <div class="content">3</div>
-      <div class="content">4</div>
-      <div class="content">5</div>
-      <div class="content">6</div>
-      <div class="content">7</div>
-      <div class="content">8</div>
-      <div class="content">9</div>
+      <h1>Judul artikel</h1>
+      <div class="image">A</div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere aliquam
+        architecto officiis illum impedit! Delectus vel eius amet voluptatum,
+        dolor dolores dolore sint maiores mollitia, placeat, consectetur
+        sapiente autem impedit.
+      </p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit vero provident voluptates explicabo accusantium quaerat laboriosam. Est saepe commodi alias, nostrum soluta vel accusantium dolorem eaque asperiores fugiat aliquid dolore?</p>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, cum harum accusantium voluptates voluptatibus quia dolorem reprehenderit culpa amet ipsa nobis rem sequi, iure quibusdam aliquid. Error nostrum perspiciatis quam.</p>
     </div>
   </body>
 </html>
